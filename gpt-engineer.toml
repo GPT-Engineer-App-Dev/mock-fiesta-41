@@ -3,10 +3,9 @@ build = "npm run build"
 test = "npm run test"
 lint = "npm run lint"
 
-
 [paths]
 base = "./dist"  # base directory to operate in (for monorepos)
 src = "./src"        # source directory (under the base directory) from which context will be retrieved
 
 [gptengineer-app]  # this namespace is used for gptengineer.app, we can use this for internal experiments
-project_id = "690f769d-2f81-4cfa-baf1-e625927228c6"
+project_id = "74439ff3-8fd7-49a1-ac97-bc4505ab2bab"
