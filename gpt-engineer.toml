@@ -8,4 +8,4 @@ base = "./dist"  # base directory to operate in (for monorepos)
 src = "./src"        # source directory (under the base directory) from which context will be retrieved
 
 [gptengineer-app]  # this namespace is used for gptengineer.app, we can use this for internal experiments
-project_id = "74439ff3-8fd7-49a1-ac97-bc4505ab2bab"
+project_id = "cea1b28d-2d7b-400e-a849-0ff8e2bf7b23"
