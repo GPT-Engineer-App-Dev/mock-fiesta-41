@@ -25,7 +25,8 @@ const HeroSection = () => {
     <section id="home" className="bg-white dark:bg-primary">
       <div className="container relative">
         <div className="flex items-center flex-col">
-          <div className="flex flex-col items-center justify-center min-h-[90vh] md:min-h-screen">
+          <div className="flex flex-col items-center justify-center min-h-[90vh] md:min-h-screen relative">
+            <div className="absolute inset-0 bg-[url('/src/assets/hero-bg.jpg')] bg-cover bg-center parallax"></div>
             <motion.h1 viewport={{ once: true }} initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ type: "linear", duration: 0.5 }} className="hero__heading">
               Felix M.
             </motion.h1>

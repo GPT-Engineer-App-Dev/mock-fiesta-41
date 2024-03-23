@@ -71,7 +71,7 @@ export default function NavBar() {
           </div>
           <Popover.Group as="nav" className="hidden space-x-6 lg:flex lg:space-x-10">
             {navlinks.map((navlink) => (
-              <a key={navlink.name} href={navlink.href} className={navlink.href ? "text-base font-medium text-primary relative before:absolute before:-bottom-1 before:h-0.5 before:w-full before:scale-x-0 before:transition before:bg-primary hover:before:scale-x-100 dark:hover:text-neutral dark:text-white dark:before:bg-secondary-400" : "text-base font-medium text-primary relative dark:text-white dark:before:bg-secondary-400 cursor-not-allowed"}>
+              <a key={navlink.name} href={navlink.href} className={navlink.href ? "text-base font-medium text-primary relative before:absolute before:-bottom-1 before:left-1/2 before:h-0.5 before:w-0 before:transition-all before:duration-300 before:bg-primary hover:before:left-0 hover:before:w-full dark:hover:text-neutral dark:text-white dark:before:bg-secondary-400" : "text-base font-medium text-primary relative dark:text-white dark:before:bg-secondary-400 cursor-not-allowed"}>
                 {navlink.name}
                 {navlink.type === "new" && <span className="block absolute -bottom-6 right-0 text-xs bg-green-400 text-primary py-1 px-2 rounded-md font-bold">NEW</span>}
                 {navlink.type === "wip" && <span className="block absolute -bottom-6 right-0 text-xs bg-yellow-400 text-primary py-1 px-2 rounded-md font-bold">WIP</span>}
