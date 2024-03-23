@@ -5,7 +5,7 @@ lint = "npm run lint"
 
 [paths]
 dist = "./dist"  # base directory to operate in (for monorepos)
-src = "./src"        # source directory (under the base directory) from which context will be retrieved
+src = "./src" 
 
 [gptengineer-app]
 project_id = "74439ff3-8fd7-49a1-ac97-bc4505ab2bab"
