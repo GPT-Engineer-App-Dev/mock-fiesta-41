@@ -40,10 +40,10 @@ export const Form = () => {
   const [errorState, setErrorState] = useState(false);
 
   return (
-    <>
+    <div className="container">
       {!successState && !errorState && (
         <form
-          className="z-50 flex flex-col gap-4 w-full overflow-hidden px-6 py-10 md:px-10"
+          className="z-50 flex flex-col gap-4 w-full overflow-hidden"
           onSubmit={handleSubmit(sendEmail)}
         >
           <div className="pb-3 relative md:pb-6">
@@ -169,6 +169,6 @@ export const Form = () => {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 };
