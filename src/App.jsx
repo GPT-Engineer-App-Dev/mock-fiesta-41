@@ -5,7 +5,7 @@ import TabSection from "./components/TabSection";
 import TwoColumnCard from "./components/TwoColumnCard";
 import FeaturedAlternate from "./components/FeaturedAlternate";
 import Footer from "./components/Footer";
-import UsesList from "./components/UsesList";
+
 import { Form } from "./components/ContactModal/Form";
 
 import "./index.css";
@@ -33,9 +33,7 @@ function App() {
           <SectionWrapper id="projects" heading="PROJECTS">
             <FeaturedAlternate />
           </SectionWrapper>
-          <SectionWrapper id="uses" heading="USES">
-            <UsesList />
-          </SectionWrapper>
+
           <SectionWrapper id="contact" heading="CONTACT">
             <Form />
           </SectionWrapper>
