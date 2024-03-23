@@ -4,7 +4,7 @@ test = "npm run test"
 lint = "npm run lint"
 
 [paths]
-dist = "./dist"  # base directory to operate in (for monorepos)
+dist = "./dist"  # base directory to sd in (for monorepos)
 src = "./src" 
 
 [gptengineer-app]
