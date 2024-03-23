@@ -4,7 +4,7 @@ test = "npm run test"
 lint = "npm run lint"
 
 [paths]
-base = "./dist"  # base directory to operate in (for monorepos)
+dist = "./dist"  # base directory to operate in (for monorepos)
 src = "./src"        # source directory (under the base directory) from which context will be retrieved
 
 [gptengineer-app]  # this namespace is used for gptengineer.app, we can use this for internal experiments
