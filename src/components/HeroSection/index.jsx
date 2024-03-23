@@ -26,7 +26,13 @@ const HeroSection = () => {
       <div className="container relative">
         <div className="flex items-center flex-col">
           <div className="flex flex-col items-center justify-center min-h-[90vh] md:min-h-screen">
-            <motion.h1 viewport={{ once: true }} initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ type: "linear", duration: 0.5 }} className="hero__heading">
+            <motion.h1
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ type: "linear", duration: 0.5 }}
+              className="hero__heading"
+            >
               Felix M.
             </motion.h1>
           </div>
@@ -55,14 +61,15 @@ const HeroSection = () => {
                 className="bg-neutral w-max rounded-full hover:bg-neutral-300 dark:bg-primary-400 dark:hover:bg-primary-300"
               >
                 <a href={social.link} target="_blank">
-                  <img className="h-14 w-14 p-4 transition-all dark:invert" src={social.logo} alt={social.alt} />
+                  <img
+                    className="h-14 w-14 p-4 transition-all dark:invert"
+                    src={social.logo}
+                    alt={social.alt}
+                  />
                 </a>
               </motion.li>
             ))}
           </ul>
-        </div>
-        <div className="container mt-8 md:mt-12">
-          <p className="text-center text-xl text-primary-500 font-semibold mb-4 dark:text-white md:text-2xl">I'm currently available for new frontend development projects!</p>
         </div>
       </div>
     </section>
