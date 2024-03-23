@@ -29,11 +29,14 @@ const HeroSection = () => {
             <motion.h1 viewport={{ once: true }} initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ type: "linear", duration: 0.5 }} className="hero__heading">
               Felix M.
             </motion.h1>
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5, type: "spring", stiffness: 100 }} className="flex items-center gap-2 mt-4">
-              <motion.span animate={{ rotate: [0, 20, -20, 20, -20, 0] }} transition={{ repeat: Infinity, duration: 1.5 }} className="text-4xl">
-                👋
-              </motion.span>
-              <span className="text-xl text-primary-400 dark:text-neutral-300">Hello visitor!</span>
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5, type: "spring", stiffness: 100 }} className="flex flex-col items-center gap-2 mt-4">
+              <div className="flex items-center gap-2">
+                <motion.span animate={{ rotate: [0, 20, -20, 20, -20, 0] }} transition={{ repeat: Infinity, duration: 1.5 }} className="text-4xl">
+                  👋
+                </motion.span>
+                <span className="text-xl text-primary-400 dark:text-neutral-300">Hello visitor!</span>
+              </div>
+              <div className="bg-green-500 text-white font-bold px-4 py-2 rounded-full mt-4 animate-pulse">🚀 Open for new projects! 🚀</div>
             </motion.div>
           </div>
         </div>
