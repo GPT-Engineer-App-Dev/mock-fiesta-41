@@ -173,10 +173,8 @@ const CardGrid = () => {
               </div>
             </div>
             <div className="w-full z-10 relative md:w-1/2">
-              <div className="relative w-full rounded-lg filter shadow-lg h-[340px] overflow-hidden">
-                {!isLoaded && <div className="absolute inset-0 bg-primary-400 animate-pulse" />}
-                <img className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500" style={{ opacity: isLoaded ? 1 : 0 }} width={684} height={355} src={proj.image} alt={proj.heading} onLoad={() => setIsLoaded(true)} />
-              </div>
+              {!isLoaded && <div className="absolute bg-primary-400 animate-pulse w-full rounded-lg filter shadow-lg object-cover h-[340px]" />}
+              <img className="w-full rounded-lg filter shadow-lg object-contain h-auto" loading="lazy" width={684} height={355} src={proj.image} alt={proj.heading} onLoad={() => setIsLoaded(true)} />
             </div>
           </motion.div>
         ))}
